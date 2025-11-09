@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://by88d32udbmay"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ia8ni"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_w82d0"]
+radius = 0.4
+height = 0.8
+
+[node name="FrUnits" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ia8ni")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+mesh = SubResource("CapsuleMesh_w82d0")
